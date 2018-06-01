@@ -1,4 +1,8 @@
+<table>
 @foreach($data as $item)
-{{$item['name']}}
-{{$item['mail']}}
+<tr>
+<th>{{$item['name']}}</th>
+<td>{{$item['mail']}}</td>
+</tr>
 @endforeach
+</table>
