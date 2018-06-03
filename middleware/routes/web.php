@@ -15,6 +15,4 @@ Route::get('/', function () {
     return view('welcome');
 });
 
-use App\Http\Middleware\HelloafterMiddleware;
-
-Route::get('hello', 'HelloController@index')->middleware(HelloafterMiddleware::class);
+Route::get('hello', 'HelloController@index')->middleware('helo');
